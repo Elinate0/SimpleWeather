@@ -17,7 +17,9 @@ result = json.loads(result)
 
 # Weather Start
 weatherTypes = ['clear sky', 'few clouds','overcast clouds', 'scattered clouds', 'broken clouds', 'shower rain', 'rain', 'thunderstorm','light snow', 'snow','mist']
+##You can change it to whichever language you want to translate from here.
 weatherTurkish = ['Güneşli', 'Az Bulutlu','Çok Bulutlu(Kapalı)', 'Alçak Bulutlu', 'Yer Yer Açık Bulutlu', 'Sağanak Yağmurlu', 'Yağmurlu', 'Gök Gürültülü Fırtına', 'Hafif Karlı', 'Karlı', 'Puslu']
+##
 city = result["city"]
 apiGeo = 'API_KEY_HERE_OPENWEATHERMAP'
 responseWeather = requests.get(f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiGeo}')
